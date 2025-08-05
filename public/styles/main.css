@@ -1,78 +1,89 @@
+/* Minimal styles for the coffee shop pages */
+
+/* Base page styling */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Clean, readable font */
+    background-color: #f5f5f5; /* Light background for minimalistic look */
+    color: #333; /* Dark text for good contrast */
 }
 
+/* Header containing the navigation links */
 .main-header {
-    width: 100%;
-    height: 3.5rem;
-    background-color: rgb(115, 183, 243);
-    padding: 0 1.5rem;
+    background-color: #6f4e37; /* Coffee-inspired brown */
+    color: #ffffff; /* White text for contrast */
+    padding: 1rem; /* Space around navigation */
 }
 
+/* Navigation bar inside the header */
 .main-header_nav {
-    height: 100%;
-    display: flex;
-    align-items: center;
+    display: flex; /* Lay out links horizontally */
+    justify-content: center; /* Center links horizontally */
 }
 
-.main-main-header_item-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+/* Unstyled list for navigation items */
+.main-header_item-list {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Display links in a row */
+    gap: 1rem; /* Space between links */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
-.main-header_item {
-    margin: 0 1rem;
-    padding: 0;
-
-}
-
+/* Individual navigation item */
 .main-header_item a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: inherit; /* Use header text color */
+    text-decoration: none; /* Remove underline */
 }
 
-.main-header_item a:hover,
-.main-header_item a:active .main-header_item a.active {
-    color: gray;
+/* Underline appears on hover for clarity */
+.main-header_item a:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 
-.product-form{
-    width: 20rem;
-    max-width: 90%;
-    margin: auto;
+/* Generic content wrapper */
+.content {
+    padding: 2rem; /* Space around content */
+    text-align: center; /* Center text for simplicity */
 }
 
-.form-control{
-    margin: 1rem 0;
+/* Form container for adding new coffees */
+.product-form {
+    max-width: 400px; /* Limit form width */
+    margin: 0 auto; /* Center form on page */
 }
 
-.form-control label,
+/* Grouping for form fields */
+.form-control {
+    margin-bottom: 1rem; /* Space between inputs */
+}
+
+/* Label styling for readability */
+.form-control label {
+    display: block; /* Ensure label takes full width */
+    margin-bottom: 0.5rem; /* Space below label */
+}
+
+/* Input field styling */
 .form-control input {
-    display: block;
-    width: 100%;
+    width: 100%; /* Full width inputs */
+    padding: 0.5rem; /* Inner space for text */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px; /* Slightly rounded corners */
 }
 
-.form-control input{
-    border: 1px solid rgb(115, 183, 243);;
-    font: inherit;
-    border-radius: 2px;
+/* Submit button styling */
+button {
+    padding: 0.5rem 1rem; /* Space inside button */
+    border: none; /* Remove default border */
+    background-color: #6f4e37; /* Match header color */
+    color: #ffffff; /* White text for readability */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Indicate interactivity */
 }
 
-button{
-    font: inherit;
-    border: 1px solid rgb(3, 91, 255);
-    color: rgb(3, 91, 255);
-    background: white;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-button:hover,
-button:active {
-    background-color: rgb(3, 91, 255);
-    color: white;
+/* Darken button on hover for feedback */
+button:hover {
+    background-color: #563927; /* Slightly darker brown */
 }
